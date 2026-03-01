@@ -13,16 +13,19 @@
   <title>Matheus Andrade | Senior DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ========== NAVBAR ========== -->
+  <div class="orb orb--1" aria-hidden="true"></div>
+  <div class="orb orb--2" aria-hidden="true"></div>
+  <div class="orb orb--3" aria-hidden="true"></div>
+
   <header id="site-header">
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar__inner">
-        <a href="#hero" class="navbar__logo text-gradient">MA</a>
+        <a href="#hero" class="navbar__logo">MA</a>
         <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -50,237 +53,241 @@
 
     <!-- ========== HERO ========== -->
     <section id="hero" class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="container hero__container">
+      <div class="container hero__grid">
         <div class="hero__content">
-          <p class="hero__eyebrow mono text-gradient" data-i18n="hero.eyebrow">DevOps / Cloud / Platform Engineering</p>
-          <h1 class="hero__name">Matheus<br>Andrade</h1>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">DevOps / Cloud / Platform Engineering</p>
+          <h1 class="hero__name"><span class="hero__name-gradient">Matheus</span><br>Andrade</h1>
           <p class="hero__headline" data-i18n="hero.headline">Senior DevOps Engineer</p>
           <p class="hero__subtitle">AWS · Terraform · Kubernetes · Platform Engineering</p>
           <p class="hero__location" data-i18n="hero.location">Brazil — Open to Remote</p>
           <div class="hero__ctas">
-            <a href="#" class="btn btn--primary btn--lg" data-i18n="hero.resume">Download Resume</a>
-            <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn">
+            <a href="#" class="btn btn--glow" data-i18n="hero.resume">Download Resume</a>
+            <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn btn--ghost" aria-label="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub
             </a>
-            <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn">
+            <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn btn--ghost" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
             </a>
-            <button class="btn" id="copy-email-btn" data-email="matheusmaais@gmail.com" aria-label="Copy email to clipboard">
+            <button class="btn btn--ghost" id="copy-email-btn" data-email="matheusmaais@gmail.com" aria-label="Copy email to clipboard">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <span data-i18n="hero.email">Email</span>
             </button>
           </div>
         </div>
-        <div class="hero__signals">
-          <div class="signal-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span data-i18n="signals.security">Enterprise Cloud Security</span>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-row"><span class="hc-label">Cloud</span><span class="hc-value">AWS · GCP</span></div>
+            <div class="hero__card-row"><span class="hc-label">IaC</span><span class="hc-value">Terraform · Spacelift</span></div>
+            <div class="hero__card-row"><span class="hc-label">CI/CD</span><span class="hc-value">GitHub Actions · ArgoCD</span></div>
+            <div class="hero__card-row"><span class="hc-label">Containers</span><span class="hc-value">Kubernetes · EKS · Docker</span></div>
+            <div class="hero__card-row"><span class="hc-label">Platform</span><span class="hc-value">Backstage · Crossplane</span></div>
           </div>
-          <div class="signal-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"/><path d="M3.5 3.5h17v17h-17z" opacity=".4"/><circle cx="12" cy="12" r="2.5"/></svg>
-            <span data-i18n="signals.aws">AWS & Terraform</span>
-          </div>
-          <div class="signal-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><path d="M12 10v4"/></svg>
-            <span data-i18n="signals.platform">Platform Engineering</span>
-          </div>
-          <div class="signal-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
-            <span data-i18n="signals.cicd">CI/CD Modernization</span>
+          <div class="hero__signals">
+            <div class="signal-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span data-i18n="signals.security">Enterprise Cloud Security</span>
+            </div>
+            <div class="signal-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><path d="M12 10v4"/></svg>
+              <span data-i18n="signals.platform">Platform Engineering</span>
+            </div>
+            <div class="signal-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
+              <span data-i18n="signals.cicd">CI/CD Modernization</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== ABOUT ========== -->
-    <section id="about" class="section--airy">
-      <div class="container reveal">
-        <h2 class="section-title" data-i18n="about.title">About</h2>
-        <p class="about-text" data-i18n="about.text">
-          I help organizations operate, scale, and evolve complex cloud environments. With 7+ years of experience across enterprise security, fintech, healthcare, and media platforms, I focus on infrastructure automation, delivery workflows, and platform reliability — turning operational complexity into engineering leverage.
-        </p>
+    <section id="about">
+      <div class="container">
+        <div class="about-block reveal">
+          <span class="section-label" data-i18n="about.title">About</span>
+          <p class="about-text" data-i18n="about.text">
+            I help organizations operate, scale, and evolve complex cloud environments. With 7+ years of experience across enterprise security, fintech, healthcare, and media platforms, I focus on infrastructure automation, delivery workflows, and platform reliability — turning operational complexity into engineering leverage.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- ========== CORE EXPERTISE ========== -->
+    <!-- ========== EXPERTISE (BENTO) ========== -->
     <section id="expertise">
       <div class="container reveal">
-        <h2 class="section-title" data-i18n="expertise.title">Core Expertise</h2>
-        <div class="expertise-grid">
-          <div class="expertise-category">
-            <h4>Cloud</h4>
-            <div class="pill-row"><span class="pill">AWS</span><span class="pill">GCP</span></div>
+        <span class="section-label" data-i18n="expertise.title">Core Expertise</span>
+        <div class="bento">
+          <div class="bento__item bento__item--wide">
+            <h3>Cloud</h3>
+            <div class="bento__pills"><span class="pill">AWS</span><span class="pill">GCP</span></div>
+            <p class="bento__note">Multi-account strategies, Well-Architected reviews, cost optimization, networking</p>
           </div>
-          <div class="expertise-category">
-            <h4 data-i18n="expertise.iac">Infrastructure as Code</h4>
-            <div class="pill-row"><span class="pill">Terraform</span><span class="pill">Spacelift</span><span class="pill">CloudFormation</span></div>
+          <div class="bento__item">
+            <h3 data-i18n="expertise.iac">Infrastructure as Code</h3>
+            <div class="bento__pills"><span class="pill">Terraform</span><span class="pill">Spacelift</span><span class="pill">CloudFormation</span></div>
           </div>
-          <div class="expertise-category">
-            <h4>CI/CD</h4>
-            <div class="pill-row"><span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">ArgoCD</span><span class="pill">CircleCI</span></div>
+          <div class="bento__item">
+            <h3>CI/CD</h3>
+            <div class="bento__pills"><span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">ArgoCD</span><span class="pill">CircleCI</span></div>
           </div>
-          <div class="expertise-category">
-            <h4 data-i18n="expertise.containers">Containers & Orchestration</h4>
-            <div class="pill-row"><span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">EKS</span><span class="pill">Helm</span></div>
+          <div class="bento__item">
+            <h3 data-i18n="expertise.containers">Containers & Orchestration</h3>
+            <div class="bento__pills"><span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">EKS</span><span class="pill">Helm</span></div>
           </div>
-          <div class="expertise-category">
-            <h4 data-i18n="expertise.observability">Observability</h4>
-            <div class="pill-row"><span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">CloudWatch</span></div>
+          <div class="bento__item">
+            <h3 data-i18n="expertise.observability">Observability</h3>
+            <div class="bento__pills"><span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">CloudWatch</span></div>
           </div>
-          <div class="expertise-category">
-            <h4 data-i18n="expertise.secplatform">Security & Platform</h4>
-            <div class="pill-row"><span class="pill">Prisma Cloud</span><span class="pill">Backstage</span><span class="pill">Crossplane</span><span class="pill">Keycloak</span></div>
+          <div class="bento__item">
+            <h3 data-i18n="expertise.secplatform">Security & Platform</h3>
+            <div class="bento__pills"><span class="pill">Prisma Cloud</span><span class="pill">Backstage</span><span class="pill">Crossplane</span><span class="pill">Keycloak</span></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== CERTIFICATIONS ========== -->
-    <section id="certifications" class="section--airy">
+    <section id="certifications">
       <div class="container reveal">
-        <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
-        <div class="certs-list">
-          <div class="cert-item">
-            <div class="cert-item__accent"></div>
-            <div class="cert-item__content">
-              <h3>AWS Certified Cloud Practitioner</h3>
-              <p data-i18n="certs.clf">Cloud fundamentals, billing, shared responsibility model, core AWS services and global infrastructure.</p>
-            </div>
+        <span class="section-label" data-i18n="certs.title">Certifications</span>
+        <div class="certs-row">
+          <div class="cert-card">
+            <div class="cert-card__badge">AWS</div>
+            <h3>Cloud Practitioner</h3>
+            <p data-i18n="certs.clf">Cloud fundamentals, billing, shared responsibility model, core AWS services and global infrastructure.</p>
           </div>
-          <div class="cert-item">
-            <div class="cert-item__accent"></div>
-            <div class="cert-item__content">
-              <h3>AWS Certified Solutions Architect – Associate</h3>
-              <p data-i18n="certs.saa">Resilient architectures, VPC design, compute/storage/database, high availability, disaster recovery patterns.</p>
-            </div>
+          <div class="cert-card">
+            <div class="cert-card__badge">AWS</div>
+            <h3>Solutions Architect</h3>
+            <p data-i18n="certs.saa">Resilient architectures, VPC design, compute/storage/database, high availability, disaster recovery patterns.</p>
           </div>
-          <div class="cert-item">
-            <div class="cert-item__accent"></div>
-            <div class="cert-item__content">
-              <h3>AWS Certified SysOps Administrator – Associate</h3>
-              <p data-i18n="certs.soa">Operational excellence, CloudWatch, Systems Manager, deployment automation, incident response, patching.</p>
-            </div>
+          <div class="cert-card">
+            <div class="cert-card__badge">AWS</div>
+            <h3>SysOps Administrator</h3>
+            <p data-i18n="certs.soa">Operational excellence, CloudWatch, Systems Manager, deployment automation, incident response, patching.</p>
           </div>
-          <div class="cert-item">
-            <div class="cert-item__accent"></div>
-            <div class="cert-item__content">
-              <h3>HashiCorp Certified: Terraform Associate</h3>
-              <p data-i18n="certs.tf">HCL syntax, providers, state management, modules, remote backends, workspaces, Terraform CLI workflows.</p>
-            </div>
+          <div class="cert-card">
+            <div class="cert-card__badge">HCL</div>
+            <h3>Terraform Associate</h3>
+            <p data-i18n="certs.tf">HCL syntax, providers, state management, modules, remote backends, workspaces, Terraform CLI workflows.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== FOCUS AREAS ========== -->
-    <section id="focus-areas" class="section--focus">
-      <div class="container reveal">
-        <h2 class="section-title" data-i18n="focus.title">Focus Areas</h2>
-        <div class="focus-editorial">
+    <section id="focus-areas">
+      <div class="container">
+        <span class="section-label reveal" data-i18n="focus.title">Focus Areas</span>
 
-          <article class="focus-entry">
-            <div class="focus-entry__index"><span>01</span></div>
-            <div class="focus-entry__content">
-              <h3 data-i18n="focus.security.title">Enterprise Cloud Security Enablement</h3>
-              <p data-i18n="focus.security.text">Guided enterprise customers through cloud workload protection adoption across complex multi-cloud environments — deploying shift-left security gates, vulnerability management, and compliance policies at scale.</p>
-              <div class="pill-row"><span class="pill">Prisma Cloud</span><span class="pill">AWS</span><span class="pill">GCP</span><span class="pill">Kubernetes</span></div>
-            </div>
-          </article>
+        <div class="focus-card focus-card--right reveal">
+          <div class="focus-card__number">01</div>
+          <div class="focus-card__content">
+            <h3 data-i18n="focus.security.title">Enterprise Cloud Security Enablement</h3>
+            <p data-i18n="focus.security.text">Guided enterprise customers through cloud workload protection adoption across complex multi-cloud environments — deploying shift-left security gates, vulnerability management, and compliance policies at scale.</p>
+            <div class="pill-row"><span class="pill">Prisma Cloud</span><span class="pill">AWS</span><span class="pill">GCP</span><span class="pill">Kubernetes</span></div>
+          </div>
+        </div>
 
-          <article class="focus-entry">
-            <div class="focus-entry__index"><span>02</span></div>
-            <div class="focus-entry__content">
-              <h3 data-i18n="focus.platform.title">Platform & Infrastructure Engineering</h3>
-              <p data-i18n="focus.platform.text">Built AWS infrastructure, Terraform-driven IaC governance, EKS/ECS orchestration, and self-service platforms with Backstage and ArgoCD. Improved release velocity and reduced cloud spend across multiple organizations.</p>
-              <div class="pill-row"><span class="pill">Terraform</span><span class="pill">EKS</span><span class="pill">GitHub Actions</span><span class="pill">Backstage</span><span class="pill">ArgoCD</span></div>
-            </div>
-          </article>
+        <div class="focus-card focus-card--left reveal">
+          <div class="focus-card__number">02</div>
+          <div class="focus-card__content">
+            <h3 data-i18n="focus.platform.title">Platform & Infrastructure Engineering</h3>
+            <p data-i18n="focus.platform.text">Built AWS infrastructure, Terraform-driven IaC governance, EKS/ECS orchestration, and self-service platforms with Backstage and ArgoCD. Improved release velocity and reduced cloud spend across multiple organizations.</p>
+            <div class="pill-row"><span class="pill">Terraform</span><span class="pill">EKS</span><span class="pill">GitHub Actions</span><span class="pill">Backstage</span><span class="pill">ArgoCD</span></div>
+          </div>
+        </div>
 
-          <article class="focus-entry">
-            <div class="focus-entry__index"><span>03</span></div>
-            <div class="focus-entry__content">
-              <h3 data-i18n="focus.cloudnative.title">Cloud-Native Delivery</h3>
-              <p data-i18n="focus.cloudnative.text">Designed serverless-first platforms using ECS, Lambda, and Terraform from scratch. Built scalable CI/CD pipelines and migrated delivery workflows to GitHub Actions for multi-account AWS deployments.</p>
-              <div class="pill-row"><span class="pill">AWS ECS</span><span class="pill">Lambda</span><span class="pill">Terraform</span><span class="pill">GitHub Actions</span></div>
-            </div>
-          </article>
+        <div class="focus-card focus-card--right reveal">
+          <div class="focus-card__number">03</div>
+          <div class="focus-card__content">
+            <h3 data-i18n="focus.cloudnative.title">Cloud-Native Delivery</h3>
+            <p data-i18n="focus.cloudnative.text">Designed serverless-first platforms using ECS, Lambda, and Terraform from scratch. Built scalable CI/CD pipelines and migrated delivery workflows to GitHub Actions for multi-account AWS deployments.</p>
+            <div class="pill-row"><span class="pill">AWS ECS</span><span class="pill">Lambda</span><span class="pill">Terraform</span><span class="pill">GitHub Actions</span></div>
+          </div>
+        </div>
 
-          <article class="focus-entry">
-            <div class="focus-entry__index"><span>04</span></div>
-            <div class="focus-entry__content">
-              <h3 data-i18n="focus.legacy.title">Legacy Deployment Modernization</h3>
-              <p data-i18n="focus.legacy.text">Introduced modern CI/CD practices to FinTech and healthcare organizations with legacy .NET/Windows applications — automating pipelines, integrating security scans, and eliminating manual deployment friction.</p>
-              <div class="pill-row"><span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">GitLab CI</span><span class="pill">.NET</span></div>
-            </div>
-          </article>
+        <div class="focus-card focus-card--left reveal">
+          <div class="focus-card__number">04</div>
+          <div class="focus-card__content">
+            <h3 data-i18n="focus.legacy.title">Legacy Deployment Modernization</h3>
+            <p data-i18n="focus.legacy.text">Introduced modern CI/CD practices to FinTech and healthcare organizations with legacy .NET/Windows applications — automating pipelines, integrating security scans, and eliminating manual deployment friction.</p>
+            <div class="pill-row"><span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">GitLab CI</span><span class="pill">.NET</span></div>
+          </div>
+        </div>
 
-          <article class="focus-entry">
-            <div class="focus-entry__index"><span>05</span></div>
-            <div class="focus-entry__content">
-              <h3 data-i18n="focus.cost.title">Cost & Operational Efficiency</h3>
-              <p data-i18n="focus.cost.text">Reduced AWS costs through right-sizing, observability tuning, and FinOps controls while maintaining SLA commitments. Built operational runbooks and incident response automation.</p>
-              <div class="pill-row"><span class="pill">AWS</span><span class="pill">Terraform</span><span class="pill">CloudWatch</span><span class="pill">Prometheus</span></div>
-            </div>
-          </article>
-
+        <div class="focus-card focus-card--right reveal">
+          <div class="focus-card__number">05</div>
+          <div class="focus-card__content">
+            <h3 data-i18n="focus.cost.title">Cost & Operational Efficiency</h3>
+            <p data-i18n="focus.cost.text">Reduced AWS costs through right-sizing, observability tuning, and FinOps controls while maintaining SLA commitments. Built operational runbooks and incident response automation.</p>
+            <div class="pill-row"><span class="pill">AWS</span><span class="pill">Terraform</span><span class="pill">CloudWatch</span><span class="pill">Prometheus</span></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ========== SELECTED IMPACT ========== -->
-    <section id="impact" class="section--impact">
+    <section id="impact">
       <div class="container reveal">
-        <h2 class="section-title" data-i18n="impact.title">Selected Impact</h2>
-        <div class="impact-strip">
-          <div class="impact-proof">
-            <h3 class="impact-proof__headline" data-i18n="impact.card1.title">Streaming Platform — Zero to Production</h3>
-            <p class="impact-proof__text" data-i18n="impact.card1.text">Built a production serverless streaming platform from scratch using AWS, Terraform, and automated CI/CD pipelines with multi-account deployment patterns.</p>
+        <span class="section-label" data-i18n="impact.title">Selected Impact</span>
+        <div class="impact-cards">
+          <div class="impact-card">
+            <div class="impact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 data-i18n="impact.card1.title">Streaming Platform — Zero to Production</h3>
+            <p data-i18n="impact.card1.text">Built a production serverless streaming platform from scratch using AWS, Terraform, and automated CI/CD pipelines with multi-account deployment patterns.</p>
           </div>
-          <div class="impact-proof">
-            <h3 class="impact-proof__headline" data-i18n="impact.card2.title">Cloud Workload Protection at Enterprise Scale</h3>
-            <p class="impact-proof__text" data-i18n="impact.card2.text">Enabled cloud security adoption across enterprise customers operating multi-million-dollar multi-cloud environments with distributed engineering teams.</p>
+          <div class="impact-card">
+            <div class="impact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="impact.card2.title">Cloud Workload Protection at Enterprise Scale</h3>
+            <p data-i18n="impact.card2.text">Enabled cloud security adoption across enterprise customers operating multi-million-dollar multi-cloud environments with distributed engineering teams.</p>
           </div>
-          <div class="impact-proof">
-            <h3 class="impact-proof__headline" data-i18n="impact.card3.title">AWS Cost Reduction & Operational Maturity</h3>
-            <p class="impact-proof__text" data-i18n="impact.card3.text">Drove measurable AWS cost reduction through right-sizing, observability improvements, and FinOps controls — while improving operational readiness and incident response.</p>
+          <div class="impact-card">
+            <div class="impact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/></svg>
+            </div>
+            <h3 data-i18n="impact.card3.title">AWS Cost Reduction & Operational Maturity</h3>
+            <p data-i18n="impact.card3.text">Drove measurable AWS cost reduction through right-sizing, observability improvements, and FinOps controls — while improving operational readiness and incident response.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section id="contact" class="section--closing">
-      <div class="container reveal contact-section">
-        <h2 class="contact-headline" data-i18n="contact.headline">Ready to improve your cloud operations?</h2>
-        <p class="contact-subtext" data-i18n="contact.text">Whether you're modernizing infrastructure, scaling a platform, or building delivery pipelines from scratch — I'd like to hear about it. Open to remote roles, consulting, and platform engineering initiatives.</p>
-        <div class="contact-links">
-          <button class="btn btn--primary btn--lg" id="copy-email-btn-footer" data-email="matheusmaais@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            matheusmaais@gmail.com
-          </button>
-          <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn btn--lg">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn btn--lg">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="#" class="btn btn--lg" data-i18n="hero.resume">Download Resume</a>
+    <section id="contact">
+      <div class="container reveal">
+        <div class="contact-block">
+          <h2 class="contact-headline" data-i18n="contact.headline">Ready to improve your cloud operations?</h2>
+          <p class="contact-subtext" data-i18n="contact.text">Whether you're modernizing infrastructure, scaling a platform, or building delivery pipelines from scratch — I'd like to hear about it. Open to remote roles, consulting, and platform engineering initiatives.</p>
+          <div class="contact-actions">
+            <button class="btn btn--glow btn--lg" id="copy-email-btn-footer" data-email="matheusmaais@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              matheusmaais@gmail.com
+            </button>
+            <div class="contact-secondary">
+              <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--ghost btn--lg" data-i18n="hero.resume">Resume</a>
+            </div>
+          </div>
+          <p class="contact-note" data-i18n="contact.subtitle">Based in Brazil — Available for remote opportunities worldwide</p>
         </div>
-        <p class="contact-subtitle" data-i18n="contact.subtitle">Based in Brazil — Available for remote opportunities worldwide</p>
       </div>
     </section>
 
   </main>
 
-  <footer id="site-footer" class="footer">
-    <div class="container">
-      <p>&copy; 2026 Matheus Andrade</p>
-    </div>
+  <footer class="footer">
+    <div class="container"><p>&copy; 2026 Matheus Andrade</p></div>
   </footer>
 
   <div class="copy-feedback" id="copy-feedback" data-i18n="copy.feedback">Email copied to clipboard!</div>
