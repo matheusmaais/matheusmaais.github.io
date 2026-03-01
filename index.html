@@ -9,6 +9,7 @@
   <meta property="og:description" content="AWS | Terraform | Kubernetes | Platform Engineering — Building scalable infrastructure and enabling engineering teams.">
   <meta property="og:url" content="https://matheusmaais.github.io">
   <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Matheus Andrade | Senior DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +17,425 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Nav -->
-  <header id="site-header"></header>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="site-header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="#hero" class="navbar__logo text-gradient">MA</a>
+
+        <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="navbar__links">
+          <a href="#about" class="navbar__link" data-i18n="nav.about">About</a>
+          <a href="#expertise" class="navbar__link" data-i18n="nav.expertise">Expertise</a>
+          <a href="#certifications" class="navbar__link" data-i18n="nav.certifications">Certifications</a>
+          <a href="#experience" class="navbar__link" data-i18n="nav.experience">Experience</a>
+          <a href="#deliver" class="navbar__link" data-i18n="nav.impact">Impact</a>
+          <a href="#contact" class="navbar__link" data-i18n="nav.contact">Contact</a>
+
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button class="lang-toggle__btn active" data-lang="en" aria-label="English">
+              <svg viewBox="0 0 640 480"><rect width="640" height="480" fill="#012169"/><path d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 302 81 480H0v-60l239-178L0 64V0z" fill="#fff"/><path d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z" fill="#C8102E"/><path d="M241 0v480h160V0zM0 160v160h640V160z" fill="#fff"/><path d="M0 193v96h640v-96zM273 0v480h96V0z" fill="#C8102E"/></svg>
+            </button>
+            <button class="lang-toggle__btn" data-lang="pt-BR" aria-label="Português">
+              <svg viewBox="0 0 640 480"><rect width="640" height="480" fill="#009c3b"/><polygon points="320,40 600,240 320,440 40,240" fill="#ffdf00"/><circle cx="320" cy="240" r="90" fill="#002776"/><path d="M230 240c0-28 18-53 45-63a90 90 0 0 0 0 126c-27-10-45-35-45-63z" fill="#fff"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <!-- Hero -->
-    <section id="hero"></section>
 
-    <!-- About -->
-    <section id="about"></section>
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__name">Matheus Andrade</h1>
+          <p class="hero__headline" data-i18n="hero.headline">Senior DevOps Engineer</p>
+          <p class="hero__subtitle">AWS | Terraform | Kubernetes | Platform Engineering</p>
+          <p class="hero__location" data-i18n="hero.location">Brazil — Open to Remote</p>
+          <div class="hero__ctas">
+            <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <button class="btn" id="copy-email-btn" data-email="matheusmaais@gmail.com" aria-label="Copy email to clipboard">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span data-i18n="hero.email">Email</span>
+            </button>
+            <a href="#" class="btn btn--primary" data-i18n="hero.resume">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Impact Highlights -->
-    <section id="impact"></section>
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="about.title">About</h2>
+        <p data-i18n="about.text" style="margin: 0 auto; text-align: center;">
+          DevOps and Platform Engineer with 7+ years of experience building and operating cloud infrastructure at scale. I specialize in AWS, Terraform, and Kubernetes — designing automated, secure, and cost-efficient environments that enable engineering teams to deliver faster and more reliably. My work spans CI/CD modernization, IaC governance, observability, and self-service platform enablement.
+        </p>
+      </div>
+    </section>
 
-    <!-- Core Expertise -->
-    <section id="expertise"></section>
+    <!-- ========== IMPACT HIGHLIGHTS ========== -->
+    <section id="impact-highlights">
+      <div class="container reveal">
+        <div class="metrics-grid">
+          <div class="glass-card metric-card">
+            <div class="metric-card__value">7+</div>
+            <div class="metric-card__label" data-i18n="impact.years">Years in DevOps & Cloud</div>
+          </div>
+          <div class="glass-card metric-card">
+            <div class="metric-card__value">4x</div>
+            <div class="metric-card__label" data-i18n="impact.certs">Cloud & IaC Certified</div>
+          </div>
+          <div class="glass-card metric-card">
+            <div class="metric-card__value">35%</div>
+            <div class="metric-card__label" data-i18n="impact.velocity">Release Velocity Improvement</div>
+          </div>
+          <div class="glass-card metric-card">
+            <div class="metric-card__value">20%</div>
+            <div class="metric-card__label" data-i18n="impact.cost">Cloud Cost Reduction</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Certifications -->
-    <section id="certifications"></section>
+    <!-- ========== CORE EXPERTISE ========== -->
+    <section id="expertise">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="expertise.title">Core Expertise</h2>
+        <div class="expertise-grid">
+          <div class="glass-card expertise-category">
+            <h4>Cloud</h4>
+            <div class="pill-row">
+              <span class="pill">AWS</span><span class="pill">GCP</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4 data-i18n="expertise.iac">Infrastructure as Code</h4>
+            <div class="pill-row">
+              <span class="pill">Terraform</span><span class="pill">Spacelift</span><span class="pill">CloudFormation</span><span class="pill">Crossplane</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4>CI/CD</h4>
+            <div class="pill-row">
+              <span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">CircleCI</span><span class="pill">GitLab CI</span><span class="pill">ArgoCD</span><span class="pill">Atlantis</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4 data-i18n="expertise.containers">Containers & Orchestration</h4>
+            <div class="pill-row">
+              <span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">EKS</span><span class="pill">ECS</span><span class="pill">Helm</span><span class="pill">Karpenter</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4 data-i18n="expertise.observability">Observability</h4>
+            <div class="pill-row">
+              <span class="pill">CloudWatch</span><span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">Loki</span><span class="pill">OpenTelemetry</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4 data-i18n="expertise.security">Security & Compliance</h4>
+            <div class="pill-row">
+              <span class="pill">Prisma Cloud</span><span class="pill">Twistcli</span><span class="pill">IAM Hardening</span><span class="pill">OIDC Federation</span><span class="pill">Secrets Mgmt</span>
+            </div>
+          </div>
+          <div class="glass-card expertise-category">
+            <h4>Platform Engineering</h4>
+            <div class="pill-row">
+              <span class="pill">Backstage</span><span class="pill">Crossplane</span><span class="pill">ArgoCD</span><span class="pill">Keycloak</span><span class="pill">GitOps</span><span class="pill">Self-Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Professional Experience -->
-    <section id="experience"></section>
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section id="certifications">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+        <div class="certs-grid">
+          <div class="glass-card cert-card">
+            <h3>AWS Cloud Practitioner</h3>
+            <p data-i18n="certs.clf">Cloud fundamentals, billing, shared responsibility model, core AWS services and global infrastructure.</p>
+          </div>
+          <div class="glass-card cert-card">
+            <h3>AWS Solutions Architect – Associate</h3>
+            <p data-i18n="certs.saa">Resilient architectures, VPC design, compute/storage/database services, high availability, disaster recovery patterns.</p>
+          </div>
+          <div class="glass-card cert-card">
+            <h3>AWS SysOps Administrator</h3>
+            <p data-i18n="certs.soa">Operational excellence, CloudWatch, Systems Manager, deployment automation, incident response, patching.</p>
+          </div>
+          <div class="glass-card cert-card">
+            <h3>HashiCorp Terraform Associate</h3>
+            <p data-i18n="certs.tf">HCL syntax, providers, state management, modules, remote backends, workspaces, Terraform CLI workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- What I Deliver -->
-    <section id="deliver"></section>
+    <!-- ========== PROFESSIONAL EXPERIENCE ========== -->
+    <section id="experience">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="exp.title">Professional Experience</h2>
 
-    <!-- Contact -->
-    <section id="contact"></section>
+        <!-- Tier 1: Current Focus -->
+        <div class="experience-tier">
+          <div class="tier-label" data-i18n="exp.current">Current Focus</div>
+          <div class="glass-card glass-card--accent">
+            <h3 data-i18n="exp.focus.title">DevOps / Platform / Cloud Engineering</h3>
+            <ul style="margin-top: var(--space-md); display: flex; flex-direction: column; gap: var(--space-sm);">
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b1">AWS infrastructure automation and governance</span>
+              </li>
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b2">Terraform modules, remote state, and multi-account patterns</span>
+              </li>
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b3">EKS/ECS orchestration and container platforms</span>
+              </li>
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b4">CI/CD modernization (GitHub Actions, Jenkins, reusable workflows)</span>
+              </li>
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b5">Incident response and operational troubleshooting</span>
+              </li>
+              <li style="color: var(--color-text-secondary); font-size: 0.9rem; padding-left: 1em; text-indent: -1em;">
+                <span style="color: var(--color-accent-start);">▸</span> <span data-i18n="exp.focus.b6">Platform enablement and self-service (Backstage + Crossplane + ArgoCD + Keycloak)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tier 2: Recent Experience -->
+        <div class="experience-tier">
+          <div class="tier-label" data-i18n="exp.recent">Recent Experience</div>
+
+          <!-- EverHealth -->
+          <div class="glass-card company-card">
+            <div class="company-card__logo">
+              <img src="assets/logos/everhealth.svg" alt="EverHealth logo" loading="lazy">
+            </div>
+            <div class="company-card__content">
+              <div class="company-card__header">
+                <span class="company-card__name">EverHealth (CollaborateMD)</span>
+                <span class="company-card__period">Aug 2025 – Present</span>
+              </div>
+              <div class="company-card__role">DevOps Engineer</div>
+              <p class="company-card__project" data-i18n="exp.everhealth">CI/CD modernization for legacy .NET healthcare platform. Migrating Jenkins pipelines to GitHub Actions, managing release cycles, AWS infrastructure, and operational troubleshooting.</p>
+              <div class="pill-row">
+                <span class="pill">GitHub Actions</span><span class="pill">Jenkins</span><span class="pill">AWS</span><span class="pill">Terraform</span><span class="pill">Windows Server</span><span class="pill">.NET</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Palo Alto Networks -->
+          <div class="glass-card company-card">
+            <div class="company-card__logo">
+              <img src="assets/logos/paloalto.svg" alt="Palo Alto Networks logo" loading="lazy">
+            </div>
+            <div class="company-card__content">
+              <div class="company-card__header">
+                <span class="company-card__name">Palo Alto Networks</span>
+                <span class="company-card__period">Apr 2024 – Aug 2025</span>
+              </div>
+              <div class="company-card__role">DevSecOps Engineer</div>
+              <p class="company-card__project" data-i18n="exp.paloalto">Customer Success Engineering for Prisma Cloud (CWP). Guided enterprise customers on cloud workload protection across AWS, GCP, and Azure. Built shift-left security gates in CI/CD pipelines.</p>
+              <div class="pill-row">
+                <span class="pill">Prisma Cloud</span><span class="pill">AWS</span><span class="pill">GCP</span><span class="pill">Kubernetes</span><span class="pill">Terraform</span><span class="pill">Twistcli</span><span class="pill">GitHub Actions</span><span class="pill">Spacelift</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canary DevOps -->
+          <div class="glass-card company-card">
+            <div class="company-card__logo">
+              <img src="assets/logos/canary.svg" alt="Canary DevOps logo" loading="lazy">
+            </div>
+            <div class="company-card__content">
+              <div class="company-card__header">
+                <span class="company-card__name">Canary DevOps</span>
+                <span class="company-card__period">Jun 2021 – Aug 2024</span>
+              </div>
+              <div class="company-card__role">DevOps Engineer</div>
+              <p class="company-card__project" data-i18n="exp.canary">Led infrastructure improvements across multiple cloud-native projects. Designed IaC stacks, implemented Helm charts, reduced cloud spend by 20%, improved release velocity by 35%.</p>
+              <div class="pill-row">
+                <span class="pill">AWS</span><span class="pill">Kubernetes</span><span class="pill">Terraform</span><span class="pill">Docker</span><span class="pill">Helm</span><span class="pill">GitHub Actions</span><span class="pill">Prometheus</span>
+              </div>
+
+              <!-- Concurrent engagements -->
+              <div class="concurrent-cards">
+                <div class="company-card">
+                  <div class="company-card__logo">
+                    <img src="assets/logos/clevertech.svg" alt="Clevertech logo" loading="lazy">
+                  </div>
+                  <div class="company-card__content">
+                    <div class="company-card__header">
+                      <span class="company-card__name">Clevertech</span>
+                      <span class="company-card__period">Jan 2023 – Apr 2024</span>
+                      <span class="pill pill--concurrent" data-i18n="exp.concurrent">Concurrent</span>
+                    </div>
+                    <p class="company-card__project" data-i18n="exp.clevertech">Media modernization — migrated monolith workloads to ECS and serverless. Built scalable CI/CD pipelines and Terraform modules for multi-account AWS deployments.</p>
+                    <div class="pill-row">
+                      <span class="pill">AWS ECS</span><span class="pill">Lambda</span><span class="pill">Terraform</span><span class="pill">CircleCI</span><span class="pill">GitHub Actions</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="company-card">
+                  <div class="company-card__logo">
+                    <img src="assets/logos/softjourn.svg" alt="Softjourn logo" loading="lazy">
+                  </div>
+                  <div class="company-card__content">
+                    <div class="company-card__header">
+                      <span class="company-card__name">Softjourn</span>
+                      <span class="company-card__period">Sep 2021 – Feb 2023</span>
+                      <span class="pill pill--concurrent" data-i18n="exp.concurrent">Concurrent</span>
+                    </div>
+                    <p class="company-card__project" data-i18n="exp.softjourn">FinTech legacy modernization — built GitLab CI/CD pipelines for .NET apps, integrated security scans, migrated RDS environments with zero downtime.</p>
+                    <div class="pill-row">
+                      <span class="pill">GitLab CI</span><span class="pill">.NET</span><span class="pill">RDS</span><span class="pill">AWS</span><span class="pill">Terraform</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3: Earlier Career -->
+        <div class="experience-tier">
+          <div class="tier-label" data-i18n="exp.earlier">Earlier Career</div>
+          <div class="earlier-career">
+            <div class="earlier-card">
+              <div class="earlier-card__logo"><img src="assets/logos/objective.svg" alt="Objective" loading="lazy"></div>
+              <div class="earlier-card__info">
+                <span class="earlier-card__name">Objective</span>
+                <span class="earlier-card__period">Dec 2020 – Jun 2021</span>
+                <span class="earlier-card__note" data-i18n="exp.objective">Liferay Cloud PaaS — managed multi-tenant K8s clusters on GCP with GitOps and self-healing.</span>
+              </div>
+            </div>
+            <div class="earlier-card">
+              <div class="earlier-card__logo"><img src="assets/logos/southsystem.svg" alt="SOUTH SYSTEM" loading="lazy"></div>
+              <div class="earlier-card__info">
+                <span class="earlier-card__name">SOUTH SYSTEM</span>
+                <span class="earlier-card__period">Jun 2020 – Dec 2020</span>
+                <span class="earlier-card__note" data-i18n="exp.southsystem">Monolith-to-microservices migration for a financial client.</span>
+              </div>
+            </div>
+            <div class="earlier-card">
+              <div class="earlier-card__logo"><img src="assets/logos/imply.svg" alt="IMPLY" loading="lazy"></div>
+              <div class="earlier-card__info">
+                <span class="earlier-card__name">IMPLY</span>
+                <span class="earlier-card__period">Nov 2018 – Jun 2020</span>
+                <span class="earlier-card__note" data-i18n="exp.imply">AWS and Linux infrastructure for billing applications — cost, security, and delivery.</span>
+              </div>
+            </div>
+            <div class="earlier-card">
+              <div class="earlier-card__logo"><img src="assets/logos/dieboldnixdorf.svg" alt="Diebold Nixdorf" loading="lazy"></div>
+              <div class="earlier-card__info">
+                <span class="earlier-card__name">Diebold Nixdorf</span>
+                <span class="earlier-card__period">Apr 2007 – Jan 2017</span>
+                <span class="earlier-card__note" data-i18n="exp.diebold">Installation and maintenance of ATM and lottery terminals across southern Brazil.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== WHAT I DELIVER ========== -->
+    <section id="deliver">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="deliver.title">What I Deliver</h2>
+        <div class="deliver-grid">
+          <div class="glass-card deliver-card">
+            <h3 data-i18n="deliver.security.title">Enterprise Cloud Security Enablement</h3>
+            <p data-i18n="deliver.security.text">Supported large-scale enterprise cloud environments, guiding adoption of workload protection with focus on runtime security, vulnerability management, and compliance.</p>
+            <div class="pill-row">
+              <span class="pill">Prisma Cloud</span><span class="pill">AWS</span><span class="pill">GCP</span><span class="pill">Kubernetes</span><span class="pill">Twistcli</span>
+            </div>
+          </div>
+          <div class="glass-card deliver-card">
+            <h3 data-i18n="deliver.platform.title">Platform & Infrastructure Engineering</h3>
+            <p data-i18n="deliver.platform.text">Built and maintained cloud infrastructure, CI/CD pipelines, EKS clusters, release processes, and self-service platforms to help engineering teams ship more reliably.</p>
+            <div class="pill-row">
+              <span class="pill">Terraform</span><span class="pill">EKS</span><span class="pill">ArgoCD</span><span class="pill">Backstage</span><span class="pill">GitHub Actions</span>
+            </div>
+          </div>
+          <div class="glass-card deliver-card">
+            <h3 data-i18n="deliver.serverless.title">Serverless & Cloud-Native Delivery</h3>
+            <p data-i18n="deliver.serverless.text">Designed and delivered cloud-native platforms using AWS services, Terraform, and automated pipelines with modernization of CI/CD workflows.</p>
+            <div class="pill-row">
+              <span class="pill">AWS Lambda</span><span class="pill">ECS</span><span class="pill">Terraform</span><span class="pill">CircleCI</span><span class="pill">GitHub Actions</span>
+            </div>
+          </div>
+          <div class="glass-card deliver-card">
+            <h3 data-i18n="deliver.legacy.title">Legacy Deployment Modernization</h3>
+            <p data-i18n="deliver.legacy.text">Adjusted deployment processes for legacy applications to enable pipeline automation and reduce manual delivery friction significantly.</p>
+            <div class="pill-row">
+              <span class="pill">GitLab CI</span><span class="pill">Jenkins</span><span class="pill">GitHub Actions</span><span class="pill">.NET</span><span class="pill">Windows Server</span>
+            </div>
+          </div>
+          <div class="glass-card deliver-card">
+            <h3 data-i18n="deliver.cost.title">Cloud Cost Optimization</h3>
+            <p data-i18n="deliver.cost.text">Contributed to AWS infrastructure and operations improvements that reduced cloud costs through right-sizing, observability tuning, and FinOps controls.</p>
+            <div class="pill-row">
+              <span class="pill">AWS Cost Explorer</span><span class="pill">Terraform</span><span class="pill">CloudWatch</span><span class="pill">FinOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container reveal contact-section">
+        <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+        <p data-i18n="contact.text" style="margin: 0 auto;">Looking for a DevOps engineer who can deliver scalable infrastructure, streamline your pipelines, and enable your engineering teams? Let's talk.</p>
+        <div class="contact-links">
+          <button class="btn btn--primary" id="copy-email-btn-footer" data-email="matheusmaais@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            matheusmaais@gmail.com
+          </button>
+          <a href="https://www.linkedin.com/in/matheusandradeti" target="_blank" rel="noopener" class="btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/matheusmaais" target="_blank" rel="noopener" class="btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="#" class="btn" data-i18n="hero.resume">Download Resume</a>
+        </div>
+        <p class="contact-subtitle" data-i18n="contact.subtitle">Based in Brazil — Available for remote opportunities worldwide</p>
+      </div>
+    </section>
+
   </main>
 
-  <footer id="site-footer"></footer>
+  <!-- ========== FOOTER ========== -->
+  <footer id="site-footer" class="footer">
+    <div class="container">
+      <p>&copy; 2026 Matheus Andrade. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="copy-feedback" id="copy-feedback" data-i18n="copy.feedback">Email copied to clipboard!</div>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
