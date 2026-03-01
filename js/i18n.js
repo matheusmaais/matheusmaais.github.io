@@ -3,169 +3,123 @@
 
   const translations = {
     en: {
-      // Nav
       'nav.about': 'About',
       'nav.expertise': 'Expertise',
       'nav.certifications': 'Certifications',
-      'nav.experience': 'Experience',
+      'nav.focus': 'Focus Areas',
       'nav.impact': 'Impact',
       'nav.contact': 'Contact',
 
-      // Hero
+      'hero.eyebrow': 'DevOps / Cloud / Platform Engineering',
       'hero.headline': 'Senior DevOps Engineer',
       'hero.location': 'Brazil — Open to Remote',
       'hero.email': 'Email',
       'hero.resume': 'Download Resume',
 
-      // About
       'about.title': 'About',
-      'about.text': 'DevOps and Platform Engineer with 7+ years of experience building and operating cloud infrastructure at scale. I specialize in AWS, Terraform, and Kubernetes — designing automated, secure, and cost-efficient environments that enable engineering teams to deliver faster and more reliably. My work spans CI/CD modernization, IaC governance, observability, and self-service platform enablement.',
+      'about.text': 'I work at the intersection of cloud infrastructure, delivery automation, and platform engineering. Over the past 7+ years, I\'ve helped organizations — from enterprise security vendors to fast-moving startups — build the operational foundations they need to scale safely. My focus is on making complex environments simpler to operate, deploy into, and evolve.',
 
-      // Impact
-      'impact.years': 'Years in DevOps & Cloud',
-      'impact.certs': 'Cloud & IaC Certified',
-      'impact.velocity': 'Release Velocity Improvement',
-      'impact.cost': 'Cloud Cost Reduction',
+      'signals.security': 'Enterprise Cloud Security',
+      'signals.aws': 'AWS & Terraform',
+      'signals.platform': 'Platform Engineering',
+      'signals.cicd': 'CI/CD Modernization',
 
-      // Expertise
       'expertise.title': 'Core Expertise',
       'expertise.iac': 'Infrastructure as Code',
       'expertise.containers': 'Containers & Orchestration',
       'expertise.observability': 'Observability',
-      'expertise.security': 'Security & Compliance',
+      'expertise.security': 'Security',
 
-      // Certifications
       'certs.title': 'Certifications',
       'certs.clf': 'Cloud fundamentals, billing, shared responsibility model, core AWS services and global infrastructure.',
-      'certs.saa': 'Resilient architectures, VPC design, compute/storage/database services, high availability, disaster recovery patterns.',
+      'certs.saa': 'Resilient architectures, VPC design, compute/storage/database, high availability, disaster recovery patterns.',
       'certs.soa': 'Operational excellence, CloudWatch, Systems Manager, deployment automation, incident response, patching.',
       'certs.tf': 'HCL syntax, providers, state management, modules, remote backends, workspaces, Terraform CLI workflows.',
 
-      // Experience
-      'exp.title': 'Professional Experience',
-      'exp.current': 'Current Focus',
-      'exp.recent': 'Recent Experience',
-      'exp.earlier': 'Earlier Career',
-      'exp.concurrent': 'Concurrent',
-      'exp.focus.title': 'DevOps / Platform / Cloud Engineering',
-      'exp.focus.b1': 'AWS infrastructure automation and governance',
-      'exp.focus.b2': 'Terraform modules, remote state, and multi-account patterns',
-      'exp.focus.b3': 'EKS/ECS orchestration and container platforms',
-      'exp.focus.b4': 'CI/CD modernization (GitHub Actions, Jenkins, reusable workflows)',
-      'exp.focus.b5': 'Incident response and operational troubleshooting',
-      'exp.focus.b6': 'Platform enablement and self-service (Backstage + Crossplane + ArgoCD + Keycloak)',
-      'exp.everhealth': 'CI/CD modernization for legacy .NET healthcare platform. Migrating Jenkins pipelines to GitHub Actions, managing release cycles, AWS infrastructure, and operational troubleshooting.',
-      'exp.paloalto': 'Customer Success Engineering for Prisma Cloud (CWP). Guided enterprise customers on cloud workload protection across AWS, GCP, and Azure. Built shift-left security gates in CI/CD pipelines.',
-      'exp.canary': 'Led infrastructure improvements across multiple cloud-native projects. Designed IaC stacks, implemented Helm charts, reduced cloud spend by 20%, improved release velocity by 35%.',
-      'exp.clevertech': 'Media modernization — migrated monolith workloads to ECS and serverless. Built scalable CI/CD pipelines and Terraform modules for multi-account AWS deployments.',
-      'exp.softjourn': 'FinTech legacy modernization — built GitLab CI/CD pipelines for .NET apps, integrated security scans, migrated RDS environments with zero downtime.',
-      'exp.objective': 'Liferay Cloud PaaS — managed multi-tenant K8s clusters on GCP with GitOps and self-healing.',
-      'exp.southsystem': 'Monolith-to-microservices migration for a financial client.',
-      'exp.imply': 'AWS and Linux infrastructure for billing applications — cost, security, and delivery.',
-      'exp.diebold': 'Installation and maintenance of ATM and lottery terminals across southern Brazil.',
+      'focus.title': 'Focus Areas',
+      'focus.security.title': 'Enterprise Cloud Security Enablement',
+      'focus.security.text': 'Worked with large enterprise customers running complex multi-cloud environments with significant cloud budgets. Guided adoption of cloud workload protection through hands-on deployment, shift-left security gates, vulnerability management, and compliance policies — enabling teams to operationalize security at scale.',
+      'focus.platform.title': 'Platform & Infrastructure Engineering',
+      'focus.platform.text': 'Built and maintained AWS infrastructure, Terraform-driven IaC governance, EKS/ECS orchestration, CI/CD modernization, and self-service platforms using Backstage, Crossplane, and ArgoCD. Improved release velocity by 35% and reduced cloud spend by 20% across multiple organizations.',
+      'focus.cloudnative.title': 'Cloud-Native Delivery',
+      'focus.cloudnative.text': 'Designed ECS/Lambda architectures from scratch with Terraform, built scalable CI/CD pipelines, and migrated delivery workflows from CircleCI to GitHub Actions. Delivered production-ready platforms with Terraform modules for multi-account AWS deployments.',
+      'focus.legacy.title': 'Legacy Deployment Modernization',
+      'focus.legacy.text': 'Introduced modern pipeline practices to FinTech and healthcare organizations with legacy .NET/Windows applications — building GitLab CI and GitHub Actions pipelines, integrating security scans, and automating RDS migrations with zero downtime. Reduced manual deployment friction by 90%.',
+      'focus.cost.title': 'Cost & Operational Efficiency',
+      'focus.cost.text': 'Reduced AWS cloud costs through right-sizing, observability tuning, and FinOps controls while maintaining operational continuity and SLA commitments. Built operational runbooks and incident response automation to improve team readiness.',
 
-      // What I Deliver
-      'deliver.title': 'What I Deliver',
-      'deliver.security.title': 'Enterprise Cloud Security Enablement',
-      'deliver.security.text': 'Supported large-scale enterprise cloud environments, guiding adoption of workload protection with focus on runtime security, vulnerability management, and compliance.',
-      'deliver.platform.title': 'Platform & Infrastructure Engineering',
-      'deliver.platform.text': 'Built and maintained cloud infrastructure, CI/CD pipelines, EKS clusters, release processes, and self-service platforms to help engineering teams ship more reliably.',
-      'deliver.serverless.title': 'Serverless & Cloud-Native Delivery',
-      'deliver.serverless.text': 'Designed and delivered cloud-native platforms using AWS services, Terraform, and automated pipelines with modernization of CI/CD workflows.',
-      'deliver.legacy.title': 'Legacy Deployment Modernization',
-      'deliver.legacy.text': 'Adjusted deployment processes for legacy applications to enable pipeline automation and reduce manual delivery friction significantly.',
-      'deliver.cost.title': 'Cloud Cost Optimization',
-      'deliver.cost.text': 'Contributed to AWS infrastructure and operations improvements that reduced cloud costs through right-sizing, observability tuning, and FinOps controls.',
+      'impact.title': 'Selected Impact',
+      'impact.card1.title': 'Serverless Platform from Scratch',
+      'impact.card1.text': 'Designed and delivered a production streaming platform using AWS, Terraform, and automated CI/CD — from zero to live.',
+      'impact.card2.title': 'Enterprise Security at Scale',
+      'impact.card2.text': 'Guided workload protection adoption across enterprise customers with multi-million-dollar cloud environments.',
+      'impact.card3.title': 'Cloud Cost Efficiency & Operations',
+      'impact.card3.text': 'Improved operational maturity and reduced AWS costs through right-sizing, automation, and FinOps-driven decisions.',
 
-      // Contact
-      'contact.title': 'Get In Touch',
+      'contact.headline': 'Let\'s build something reliable.',
       'contact.text': 'Looking for a DevOps engineer who can deliver scalable infrastructure, streamline your pipelines, and enable your engineering teams? Let\'s talk.',
       'contact.subtitle': 'Based in Brazil — Available for remote opportunities worldwide',
 
-      // Misc
       'copy.feedback': 'Email copied to clipboard!'
     },
     'pt-BR': {
-      // Nav
       'nav.about': 'Sobre',
       'nav.expertise': 'Expertise',
       'nav.certifications': 'Certificações',
-      'nav.experience': 'Experiência',
+      'nav.focus': 'Áreas de Foco',
       'nav.impact': 'Impacto',
       'nav.contact': 'Contato',
 
-      // Hero
+      'hero.eyebrow': 'DevOps / Cloud / Platform Engineering',
       'hero.headline': 'Engenheiro DevOps Sênior',
       'hero.location': 'Brasil — Disponível para Remoto',
       'hero.email': 'Email',
       'hero.resume': 'Baixar Currículo',
 
-      // About
       'about.title': 'Sobre',
-      'about.text': 'Engenheiro DevOps e Platform com mais de 7 anos de experiência construindo e operando infraestrutura cloud em escala. Especialista em AWS, Terraform e Kubernetes — projetando ambientes automatizados, seguros e eficientes em custo que permitem às equipes de engenharia entregar mais rápido e com mais confiabilidade. Minha atuação abrange modernização de CI/CD, governança de IaC, observabilidade e habilitação de plataformas self-service.',
+      'about.text': 'Atuo na interseção entre infraestrutura cloud, automação de entrega e engenharia de plataforma. Nos últimos 7+ anos, ajudei organizações — de fornecedores de segurança enterprise a startups de rápido crescimento — a construir as bases operacionais que precisam para escalar com segurança. Meu foco é tornar ambientes complexos mais simples de operar, deployar e evoluir.',
 
-      // Impact
-      'impact.years': 'Anos em DevOps & Cloud',
-      'impact.certs': 'Certificações Cloud & IaC',
-      'impact.velocity': 'Melhoria na Velocidade de Release',
-      'impact.cost': 'Redução de Custos Cloud',
+      'signals.security': 'Segurança Cloud Enterprise',
+      'signals.aws': 'AWS & Terraform',
+      'signals.platform': 'Engenharia de Plataforma',
+      'signals.cicd': 'Modernização de CI/CD',
 
-      // Expertise
       'expertise.title': 'Expertise Principal',
       'expertise.iac': 'Infraestrutura como Código',
       'expertise.containers': 'Containers & Orquestração',
       'expertise.observability': 'Observabilidade',
-      'expertise.security': 'Segurança & Compliance',
+      'expertise.security': 'Segurança',
 
-      // Certifications
       'certs.title': 'Certificações',
       'certs.clf': 'Fundamentos de cloud, billing, modelo de responsabilidade compartilhada, serviços core da AWS e infraestrutura global.',
-      'certs.saa': 'Arquiteturas resilientes, design de VPC, serviços de computação/armazenamento/banco de dados, alta disponibilidade, padrões de disaster recovery.',
+      'certs.saa': 'Arquiteturas resilientes, design de VPC, computação/armazenamento/banco de dados, alta disponibilidade, padrões de disaster recovery.',
       'certs.soa': 'Excelência operacional, CloudWatch, Systems Manager, automação de deploy, resposta a incidentes, patching.',
       'certs.tf': 'Sintaxe HCL, providers, gerenciamento de state, módulos, backends remotos, workspaces, workflows do Terraform CLI.',
 
-      // Experience
-      'exp.title': 'Experiência Profissional',
-      'exp.current': 'Foco Atual',
-      'exp.recent': 'Experiência Recente',
-      'exp.earlier': 'Carreira Anterior',
-      'exp.concurrent': 'Simultâneo',
-      'exp.focus.title': 'DevOps / Platform / Cloud Engineering',
-      'exp.focus.b1': 'Automação de infraestrutura AWS e governança',
-      'exp.focus.b2': 'Módulos Terraform, remote state e padrões multi-account',
-      'exp.focus.b3': 'Orquestração EKS/ECS e plataformas de containers',
-      'exp.focus.b4': 'Modernização de CI/CD (GitHub Actions, Jenkins, workflows reutilizáveis)',
-      'exp.focus.b5': 'Resposta a incidentes e troubleshooting operacional',
-      'exp.focus.b6': 'Habilitação de plataforma e self-service (Backstage + Crossplane + ArgoCD + Keycloak)',
-      'exp.everhealth': 'Modernização de CI/CD para plataforma legada .NET de saúde. Migração de pipelines Jenkins para GitHub Actions, gestão de ciclos de release, infraestrutura AWS e troubleshooting operacional.',
-      'exp.paloalto': 'Customer Success Engineering para Prisma Cloud (CWP). Orientação de clientes enterprise em proteção de workloads cloud em AWS, GCP e Azure. Construção de security gates shift-left em pipelines CI/CD.',
-      'exp.canary': 'Liderança de melhorias de infraestrutura em múltiplos projetos cloud-native. Design de stacks IaC, implementação de Helm charts, redução de 20% em custos cloud, melhoria de 35% na velocidade de release.',
-      'exp.clevertech': 'Modernização de mídia — migração de workloads monolíticos para ECS e serverless. Construção de pipelines CI/CD escaláveis e módulos Terraform para deploys AWS multi-account.',
-      'exp.softjourn': 'Modernização legada FinTech — construção de pipelines GitLab CI/CD para apps .NET, integração de scans de segurança, migração de ambientes RDS com zero downtime.',
-      'exp.objective': 'Liferay Cloud PaaS — gestão de clusters K8s multi-tenant no GCP com GitOps e self-healing.',
-      'exp.southsystem': 'Migração de monólito para microsserviços para cliente do setor financeiro.',
-      'exp.imply': 'Infraestrutura AWS e Linux para aplicações de billing — custo, segurança e entrega.',
-      'exp.diebold': 'Instalação e manutenção de terminais ATM e lotéricos no sul do Brasil.',
+      'focus.title': 'Áreas de Foco',
+      'focus.security.title': 'Habilitação de Segurança Cloud Enterprise',
+      'focus.security.text': 'Atuei com grandes clientes enterprise operando ambientes multi-cloud complexos com orçamentos cloud significativos. Orientei a adoção de proteção de workloads cloud através de deploy hands-on, security gates shift-left, gestão de vulnerabilidades e políticas de compliance — habilitando equipes a operacionalizar segurança em escala.',
+      'focus.platform.title': 'Engenharia de Plataforma & Infraestrutura',
+      'focus.platform.text': 'Construí e mantive infraestrutura AWS, governança de IaC com Terraform, orquestração EKS/ECS, modernização de CI/CD e plataformas self-service usando Backstage, Crossplane e ArgoCD. Melhorei a velocidade de release em 35% e reduzi custos cloud em 20% em múltiplas organizações.',
+      'focus.cloudnative.title': 'Entrega Cloud-Native',
+      'focus.cloudnative.text': 'Projetei arquiteturas ECS/Lambda do zero com Terraform, construí pipelines CI/CD escaláveis e migrei workflows de entrega do CircleCI para GitHub Actions. Entreguei plataformas production-ready com módulos Terraform para deploys AWS multi-account.',
+      'focus.legacy.title': 'Modernização de Deploy Legado',
+      'focus.legacy.text': 'Introduzi práticas modernas de pipeline em organizações FinTech e saúde com aplicações legadas .NET/Windows — construindo pipelines GitLab CI e GitHub Actions, integrando scans de segurança e automatizando migrações RDS com zero downtime. Reduzi o atrito de deploy manual em 90%.',
+      'focus.cost.title': 'Custo & Eficiência Operacional',
+      'focus.cost.text': 'Reduzi custos AWS cloud através de right-sizing, tuning de observabilidade e controles FinOps, mantendo continuidade operacional e compromissos de SLA. Construí runbooks operacionais e automação de resposta a incidentes para melhorar a prontidão da equipe.',
 
-      // What I Deliver
-      'deliver.title': 'O Que Eu Entrego',
-      'deliver.security.title': 'Habilitação de Segurança Cloud Enterprise',
-      'deliver.security.text': 'Suporte a ambientes cloud enterprise de larga escala, orientando a adoção de proteção de workloads com foco em segurança runtime, gestão de vulnerabilidades e compliance.',
-      'deliver.platform.title': 'Engenharia de Plataforma & Infraestrutura',
-      'deliver.platform.text': 'Construção e manutenção de infraestrutura cloud, pipelines CI/CD, clusters EKS, processos de release e plataformas self-service para equipes de engenharia.',
-      'deliver.serverless.title': 'Entrega Serverless & Cloud-Native',
-      'deliver.serverless.text': 'Design e entrega de plataformas cloud-native usando serviços AWS, Terraform e pipelines automatizados com modernização de workflows CI/CD.',
-      'deliver.legacy.title': 'Modernização de Deploy Legado',
-      'deliver.legacy.text': 'Ajuste de processos de deploy para aplicações legadas, habilitando automação de pipeline e reduzindo significativamente o atrito de entrega manual.',
-      'deliver.cost.title': 'Otimização de Custos Cloud',
-      'deliver.cost.text': 'Contribuição para melhorias de infraestrutura e operações AWS que reduziram custos cloud através de right-sizing, tuning de observabilidade e controles FinOps.',
+      'impact.title': 'Impacto Selecionado',
+      'impact.card1.title': 'Plataforma Serverless do Zero',
+      'impact.card1.text': 'Projetei e entreguei uma plataforma de streaming em produção usando AWS, Terraform e CI/CD automatizado — do zero ao ar.',
+      'impact.card2.title': 'Segurança Enterprise em Escala',
+      'impact.card2.text': 'Orientei a adoção de proteção de workloads em clientes enterprise com ambientes cloud multimilionários.',
+      'impact.card3.title': 'Eficiência de Custos Cloud & Operações',
+      'impact.card3.text': 'Melhorei a maturidade operacional e reduzi custos AWS através de right-sizing, automação e decisões orientadas por FinOps.',
 
-      // Contact
-      'contact.title': 'Entre em Contato',
+      'contact.headline': 'Vamos construir algo confiável.',
       'contact.text': 'Procurando um engenheiro DevOps que entrega infraestrutura escalável, otimiza seus pipelines e habilita suas equipes de engenharia? Vamos conversar.',
       'contact.subtitle': 'Baseado no Brasil — Disponível para oportunidades remotas no mundo todo',
 
-      // Misc
       'copy.feedback': 'Email copiado!'
     }
   };
@@ -191,10 +145,8 @@
     localStorage.setItem('portfolio-lang', lang);
   }
 
-  // Expose for main.js and toggle buttons
   window.__i18n = { applyLanguage, currentLang: detectLanguage };
 
-  // Apply on DOM ready
   document.addEventListener('DOMContentLoaded', () => {
     const lang = detectLanguage();
     applyLanguage(lang);
