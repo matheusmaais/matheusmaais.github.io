@@ -14,7 +14,6 @@
       'hero.headline': 'Senior DevOps Engineer',
       'hero.location': 'Brazil — Open to Remote',
       'hero.email': 'Email',
-      'hero.resume': 'Download Resume',
 
       'about.title': 'About',
       'about.text': 'I help organizations operate, scale, and evolve complex cloud environments. With 7+ years of experience across enterprise security, fintech, healthcare, and media platforms, I focus on infrastructure automation, delivery workflows, and platform reliability — turning operational complexity into engineering leverage.',
@@ -74,7 +73,6 @@
       'hero.headline': 'Engenheiro DevOps Sênior',
       'hero.location': 'Brasil — Disponível para Remoto',
       'hero.email': 'Email',
-      'hero.resume': 'Baixar Currículo',
 
       'about.title': 'Sobre',
       'about.text': 'Ajudo organizações a operar, escalar e evoluir ambientes cloud complexos. Com 7+ anos de experiência em segurança enterprise, fintech, saúde e plataformas de mídia, foco em automação de infraestrutura, workflows de entrega e confiabilidade de plataforma — transformando complexidade operacional em alavancagem de engenharia.',
